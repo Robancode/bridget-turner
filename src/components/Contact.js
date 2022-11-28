@@ -1,9 +1,13 @@
 import React from "react";
+import feet from "./../assets/feet1.jpg";
 import Container from "react-bootstrap/Container";
 
 function Contact() {
   return (
-    <Container className='py-12'>
+    <Container>
+      <div className='d-flex justify-content-center object-contain'>
+        <img src={feet} />
+      </div>
       <p>
         If you would like to make an appointment to see me, please contact me by
         phone or email, or visit my clinic.

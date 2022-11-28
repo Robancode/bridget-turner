@@ -27,7 +27,8 @@ function Home() {
         </p>
         <p>
           My services offer the highest standard of care and hygiene, and
-          encompass all aspects of foot health, including:
+          encompass all aspects of foot health, whether they are routine or
+          special foot care needs, including:
           <ul className='list-disc'>
             <li> General foot care </li>
             <li> Nail care </li>
