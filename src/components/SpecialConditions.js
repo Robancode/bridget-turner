@@ -21,7 +21,10 @@ function SpecialConditions() {
           </ul>
         </Col>
         <Col lg={4} sm={12} md={12}>
-          <img src={feet} />
+          <img
+            src={feet}
+            alt='A pair of clean, bare feet mid walk towards the camera, against a white background, on a brown wooden floor.'
+          />
         </Col>
       </Row>
     </Container>

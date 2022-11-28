@@ -6,7 +6,10 @@ function Contact() {
   return (
     <Container>
       <div className='d-flex justify-content-center object-contain'>
-        <img src={feet} />
+        <img
+          src={feet}
+          alt='A pair of clean and healthy feet in a long line against a white background'
+        />
       </div>
       <p>
         If you would like to make an appointment to see me, please contact me by

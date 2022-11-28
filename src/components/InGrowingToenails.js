@@ -119,7 +119,11 @@ function InGrowingToenails() {
         </p>
       </Col>
       <Col lg={3} sm={12} md={12}>
-        <img src={feet} className='rounded-sm' />
+        <img
+          src={feet}
+          className='rounded-sm'
+          alt='A gloved podiatrists hand holding a patients foot, which is clean and healthy, against a white background'
+        />
       </Col>
     </Container>
   );

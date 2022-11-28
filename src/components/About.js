@@ -6,7 +6,10 @@ function About() {
   return (
     <Container>
       <div className='d-flex justify-content-center object-contain'>
-        <img src={feet} />
+        <img
+          src={feet}
+          alt='Some clean and healthy feet in a long line against a white background'
+        />
       </div>
       <p className='pt-12'>
         <h2>Podiatry and Chiropody Services Uckfield East Sussex</h2>

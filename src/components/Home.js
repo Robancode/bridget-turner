@@ -6,7 +6,10 @@ function Home() {
   return (
     <Container>
       <div className='d-flex justify-content-center object-contain'>
-        <img src={feet} />
+        <img
+          src={feet}
+          alt='Some clean and healthy feet in a long line against a white background'
+        />
       </div>
       <h1 className='pt-12'>Bridget Turner</h1>
       <h4>

@@ -67,7 +67,11 @@ function GeneralFootCare() {
         </p>
       </Col>
       <Col lg={3} sm={12} md={12}>
-        <img src={feet} className='rounded-sm' />
+        <img
+          src={feet}
+          className='rounded-sm'
+          alt='Gloved podiatrists hand holding a patients bare foot, which is clean and healthy, against a white background'
+        />
       </Col>
     </Container>
   );
