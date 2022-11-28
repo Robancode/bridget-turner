@@ -6,14 +6,16 @@ import Contact from "./components/Contact";
 import GeneralFootCare from "./components/GeneralFootCare";
 import InGrowingToenails from "./components/InGrowingToenails";
 import Container from "react-bootstrap/Container";
+import Footer from "./components/Footer";
 import Row from "react-bootstrap/Row";
 import { Route, Routes } from "react-router-dom";
+import SpecialConditions from "./components/SpecialConditions";
 
 function App() {
   return (
-    <>
+    <div className='d-flex flex-column justify-between h-screen'>
       <NavBar />
-      <Container className='w-75'>
+      <Container className='w-75 grow' md={12} lg={6}>
         <Row>
           <Routes>
             <Route path='/' exact element={<Home />} />
@@ -27,10 +29,15 @@ function App() {
               path='/services/in-growing-toenails'
               element={<InGrowingToenails />}
             />
+            <Route
+              path='/services/special-conditions'
+              element={<SpecialConditions />}
+            />
           </Routes>
         </Row>
       </Container>
-    </>
+      <Footer />
+    </div>
   );
 }
 

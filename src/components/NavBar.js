@@ -9,10 +9,12 @@ function NavBar() {
   return (
     <Navbar className='bg-lightcyan' expand='lg'>
       <Container>
-        <Navbar.Brand href='/'>Bridget Turner</Navbar.Brand>
+        <Navbar.Brand className='flex-grow' href='/'>
+          Bridget Turner Podiatrist
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto items-center gap-2.5 text-grey'>
+        <Navbar.Collapse className=' justify-content-end'>
+          <Nav className='items-center gap-2.5 text-grey d-flex justify-content-end'>
             <Link to='/' className='no-underline text-grey hover:text-cyan'>
               Home
             </Link>
@@ -22,32 +24,40 @@ function NavBar() {
             >
               About
             </Link>
-            <NavDropdown title='Services' id='basic-nav-dropdown'>
-              <Link
-                to='/services/general-foot-care'
-                className='no-underline text-grey hover:text-cyan'
-              >
-                General Foot Care
-              </Link>
-              <Link
-                to='/services/in-growing-toenails'
-                className='no-underline text-grey hover:text-cyan'
-              >
-                In-growing Toenails
-              </Link>
-              <Link
-                to='/services/prescription-insoles'
-                className='no-underline text-grey hover:text-cyan'
-              >
-                Prescription Insoles
-              </Link>
+            <NavDropdown title='Services'>
+              <Nav.Item className='p-2'>
+                <Link
+                  to='/services/general-foot-care'
+                  className='no-underline text-grey hover:text-cyan'
+                >
+                  General Foot Care
+                </Link>
+              </Nav.Item>
+              <Nav.Item className='p-2'>
+                <Link
+                  to='/services/in-growing-toenails'
+                  className='no-underline text-grey hover:text-cyan'
+                >
+                  In-growing Toenails
+                </Link>
+              </Nav.Item>
+              {/* <Nav.Item className='p-2'>
+                <Link
+                  to='/services/prescription-insoles'
+                  className='no-underline text-grey hover:text-cyan'
+                >
+                  Prescription Insoles
+                </Link>
+              </Nav.Item> */}
               <NavDropdown.Divider />
-              <Link
-                to='/services/special-conditions'
-                className='no-underline text-grey hover:text-cyan'
-              >
-                Special Conditions
-              </Link>
+              <Nav.Item className='p-2'>
+                <Link
+                  to='/services/special-conditions'
+                  className='no-underline text-grey hover:text-cyan'
+                >
+                  Special Conditions
+                </Link>
+              </Nav.Item>
             </NavDropdown>
             <Link
               to='/contact'

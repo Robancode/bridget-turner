@@ -1,8 +1,6 @@
 import React from "react";
 import feet from "./../assets/feet1.jpg";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 function Home() {
   return (
@@ -13,7 +11,7 @@ function Home() {
       <h1 className='pt-12'>Bridget Turner</h1>
       <h4>
         Specialist in Foot Health, BSCHons in Podiatry, with over 20 years
-        experience in podiatry and Chiropody
+        experience in Podiatry and Chiropody
       </h4>
       <div className='d-flex flex-col space-y-8 pt-8'>
         <p>
@@ -23,9 +21,9 @@ function Home() {
         </p>
         <p>
           I have worked in many areas of podiatry care with a wide diversity of
-          health problems and people. I am now working in private practice
-          alongside other healthcare professionals at The Hollies, 50a High
-          Street Uckfield.
+          health problems and people. I have worked at numerous private
+          practices, and am currently working at Vitaliity, Amberly House,
+          Beacom Road, Crowborough, TN61AS.
         </p>
         <p>
           My services offer the highest standard of care and hygiene, and

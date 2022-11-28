@@ -10,6 +10,12 @@ function Contact() {
       </p>
       <p>Address: Vitaliity, Amberly House, Beacom Road, Crowborough, TN61AS</p>
       <p>Telephone number: 07775698487</p>
+      <p>
+        Email:{" "}
+        <a href='mailto:bridgeturner@googlemail.com'>
+          bridgeturner@googlemail.com
+        </a>
+      </p>
     </Container>
   );
 }
