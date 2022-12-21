@@ -1,29 +1,51 @@
 import React from "react";
 import feet from "./../assets/feet1.jpg";
-import Container from "react-bootstrap/Container";
+import { Row, Col, Container } from "react-bootstrap";
 
 function Contact() {
   return (
-    <Container>
+    <>
       <div className='d-flex justify-content-center object-contain'>
         <img
           src={feet}
-          alt='A pair of clean and healthy feet in a long line against a white background'
+          alt='Some clean and healthy feet in a long line against a white background'
         />
       </div>
-      <p>
-        If you would like to make an appointment to see me, please contact me by
-        phone or email, or visit my clinic.
-      </p>
-      <p>Address: Vitaliity, Amberly House, Beacom Road, Crowborough, TN61AS</p>
-      <p>Telephone number: 07775698487</p>
-      <p>
-        Email:{" "}
-        <a href='mailto:bridgeturner@googlemail.com'>
-          bridgeturner@googlemail.com
-        </a>
-      </p>
-    </Container>
+      <Container className='d-flex justify-content-center flex-column object-contain h-100'>
+        <Row className='justify-content-center py-5'>
+          <Col xs={12} md={6}>
+            <p>
+              If you would like to make an appointment to see me, please contact
+              me by phone or email, or visit my clinic.
+            </p>
+          </Col>
+        </Row>
+        <Row className='justify-content-center flex-grow-1'>
+          <Col xs={12} md={3}>
+            <h4>Address:</h4>
+            {/* <ul> */}
+            <p>
+              Vitaliity, <br />
+              Amberly House, <br />
+              Beacom Road, <br />
+              Crowborough, <br />
+              TN61AS
+            </p>
+            {/* </ul> */}
+          </Col>
+          <Col xs={12} md={3}>
+            <h4>Telephone number:</h4> 07775698487
+          </Col>
+
+          <Col xs={12} md={3}>
+            <h4>Email: </h4>
+            <a href='mailto:bridgeturner@googlemail.com'>
+              bridgeturner@googlemail.com
+            </a>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 

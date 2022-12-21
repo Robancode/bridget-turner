@@ -75,11 +75,15 @@ function Home() {
         </Row>
       </Container>
       <Container className='p-5 text-center'>
-        <p>
-          If you would like me to visit you, or you would like to offer my
-          services to those in your care, then please don’t hesitate to contact
-          me.
-        </p>
+        <Row className='justify-content-center'>
+          <Col md={8}>
+            <p>
+              If you would like me to visit you, or you would like to offer my
+              services to those in your care, then please don’t hesitate to
+              contact me.
+            </p>
+          </Col>
+        </Row>
       </Container>
     </>
   );

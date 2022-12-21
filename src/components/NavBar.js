@@ -19,7 +19,7 @@ function NavBar() {
               Home
             </Link>
             <Link
-              to='/'
+              to='/about'
               className='no-underline text-grey hover:text-cyan'
             >
               About

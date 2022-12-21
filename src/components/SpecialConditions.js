@@ -6,28 +6,30 @@ import feet from "../assets/feet2.jpg";
 
 function SpecialConditions() {
   return (
-    <Container className='py-12'>
-      <Row>
-        <Col className='d-flex flex-col pr-4' lg={8} md={12} sm={12}>
-          <h1>Special Conditions</h1>
-          <p>
-            I am qualified to treat patients with special foot care needs, such
-            as
-          </p>
-          <ul className='list-disc'>
-            <li>Rheumatoid arthritis </li>
-            <li> Diabetes</li>
-            <li> Circulatory Disorders</li>
-          </ul>
-        </Col>
-        <Col lg={4} sm={12} md={12}>
-          <img
-            src={feet}
-            alt='A pair of clean, bare feet mid walk towards the camera, against a white background, on a brown wooden floor.'
-          />
-        </Col>
-      </Row>
-    </Container>
+    <div className=' flex-grow-1'>
+      <Container>
+        <Row className='justify-content-center'>
+          <Col md={6} className='d-flex flex-col'>
+            <h1 className='py-5'>Special Conditions</h1>
+            <p>
+              I am qualified to treat patients with special foot care needs,
+              such as
+            </p>
+            <ul className='list-disc'>
+              <li>Rheumatoid arthritis </li>
+              <li> Diabetes</li>
+              <li> Circulatory Disorders</li>
+            </ul>
+          </Col>
+          <Col md={6}>
+            <img
+              src={feet}
+              alt='A pair of clean, bare feet mid walk towards the camera, against a white background, on a brown wooden floor.'
+            />
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 
