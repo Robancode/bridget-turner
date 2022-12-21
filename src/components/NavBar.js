@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <Navbar className='bg-lightcyan' expand='lg'>
+    <Navbar className='bg-lightcyan shadow' expand='lg'>
       <Container>
         <Navbar.Brand className='flex-grow' href='/'>
           Bridget Turner Podiatrist
@@ -19,7 +19,7 @@ function NavBar() {
               Home
             </Link>
             <Link
-              to='/about'
+              to='/'
               className='no-underline text-grey hover:text-cyan'
             >
               About
