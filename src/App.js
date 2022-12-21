@@ -15,27 +15,23 @@ function App() {
   return (
     <div className='d-flex flex-column justify-between h-screen'>
       <NavBar />
-      <Container className='w-75 grow' md={12} lg={6}>
-        <Row>
-          <Routes>
-            <Route path='/' exact element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route
-              path='/services/general-foot-care'
-              element={<GeneralFootCare />}
-            />
-            <Route
-              path='/services/in-growing-toenails'
-              element={<InGrowingToenails />}
-            />
-            <Route
-              path='/services/special-conditions'
-              element={<SpecialConditions />}
-            />
-          </Routes>
-        </Row>
-      </Container>
+      <Routes>
+        <Route path='/' exact element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route
+          path='/services/general-foot-care'
+          element={<GeneralFootCare />}
+        />
+        <Route
+          path='/services/in-growing-toenails'
+          element={<InGrowingToenails />}
+        />
+        <Route
+          path='/services/special-conditions'
+          element={<SpecialConditions />}
+        />
+      </Routes>
       <Footer />
     </div>
   );
