@@ -8,7 +8,11 @@ function GeneralFootCare() {
     <div className='d-flex flex-column'>
       <Container className='pb-4'>
         <Row className='justify-content-center'>
-          <Col xs={12} md={4} className='align-self-center d-flex'>
+          <Col
+            xs={12}
+            md={4}
+            className='align-self-center justify-content-center d-flex'
+          >
             <LazyLoadImage
               effect='blur'
               src={feet}

@@ -6,33 +6,21 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function Home() {
   return (
     <>
-      <div className='d-flex justify-content-center object-contain'>
-        {/* <Card className='text-dark'>
-          <Card.Img src={feet} alt='Card image' />
-          <Card.ImgOverlay
-            style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
-          >
-            <Card.Title>Bridget Turner</Card.Title>
-            <Card.Text>
-              <h4 className='text-center mw-75 text-dark'>
-                Specialist in Foot Health, BSc(Hons) in Podiatry, with over 20
-                years experience in Podiatry and Chiropody
-              </h4>
-            </Card.Text>
-          </Card.ImgOverlay>
-        </Card> */}
-        <div className='bg-white-50'>
-          <LazyLoadImage
-            effect='blur'
-            src={feet}
-            alt='Some clean and healthy feet in a long line against a white background'
-          />
-        </div>
+      <div
+        className='d-flex justify-content-center object-contain'
+        style={{ position: "relative" }}
+      >
+        <LazyLoadImage
+          effect='blur'
+          src={feet}
+          alt='Some clean and healthy feet in a long line against a white background'
+        />
+        <div className='imageGradient'></div>
       </div>
       <Container className='mt-4 mb-5'>
         <Row className='justify-content-center'>
           <Col md={6}>
-            <Card className='p-3 shadow border-0'>
+            <Card className='p-3  border-0'>
               <h1 className='text-center'>Bridget Turner</h1>
               <h4 className='text-center mw-75'>
                 Private Specialist in Foot Health, BSc(Hons) in Podiatry

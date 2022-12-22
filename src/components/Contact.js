@@ -6,12 +6,16 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function Contact() {
   return (
     <>
-      <div className='d-flex justify-content-center object-contain'>
+      <div
+        className='d-flex justify-content-center object-contain'
+        style={{ position: "relative" }}
+      >
         <LazyLoadImage
           effect='blur'
           src={feet}
           alt='Some clean and healthy feet in a long line against a white background'
         />
+        <div className='imageGradient'></div>
       </div>
       <Container className='d-flex justify-content-center flex-column object-contain h-100'>
         <Row className='justify-content-center py-5'>
@@ -22,12 +26,12 @@ function Contact() {
             </p>
           </Col>
         </Row>
-        <Row className='flex-grow-1 mb-4'>
+        <Row className='flex-grow-1 mb-4 d-flex justify-content-center'>
           <Row
             className='justify-content-center'
             style={{ height: "fit-content" }}
           >
-            <Col xs={12} md={3} className='mb-2'>
+            <Col xs={12} md={4} lg={3} className='mb-2'>
               <Card className='p-2 h-100 shadow border-0 text-center'>
                 <Card.Title className='border-bottom pb-2'>Address</Card.Title>
                 {/* <ul> */}
@@ -43,7 +47,7 @@ function Contact() {
               </Card>
               {/* </ul> */}
             </Col>
-            <Col xs={12} md={3} className='mb-2'>
+            <Col xs={12} md={4} lg={3} className='mb-2'>
               <Card className='p-2 h-100 shadow border-0 text-center'>
                 <Card.Title className='border-bottom pb-2'>
                   Telephone number
@@ -52,7 +56,7 @@ function Contact() {
               </Card>
             </Col>
 
-            <Col xs={12} md={3} className='mb-2'>
+            <Col xs={12} md={4} lg={3} className='mb-2'>
               <Card className='p-2 h-100 shadow border-0 text-center'>
                 <Card.Title className='border-bottom pb-2'>Email</Card.Title>
                 <a href='mailto:bridgeturner@googlemail.com'>
