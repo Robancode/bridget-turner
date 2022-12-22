@@ -5,9 +5,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import GeneralFootCare from "./components/GeneralFootCare";
 import InGrowingToenails from "./components/InGrowingToenails";
-import Container from "react-bootstrap/Container";
 import Footer from "./components/Footer";
-import Row from "react-bootstrap/Row";
 import { Route, Routes } from "react-router-dom";
 import SpecialConditions from "./components/SpecialConditions";
 
