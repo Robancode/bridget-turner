@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <Navbar className='bg-lightcyan shadow' expand='lg'>
+    <Navbar className='bg-lightcyan shadow' expand='lg' style={{ zIndex: 1 }}>
       <Container>
         <Navbar.Brand className='flex-grow' href='/'>
-          Bridget Turner Podiatrist
+          Bridget Turner
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse className=' justify-content-end'>

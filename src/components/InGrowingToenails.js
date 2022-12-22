@@ -3,14 +3,15 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import feet from "../assets/feet2.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function InGrowingToenails() {
   return (
     <div className=' d-flex flex-column'>
-      <Container className='pb-5'>
+      <Container className='pb-5 mt-5'>
         <Row className='justify-content-center'>
           <Col xs={11} md={5} className=''>
-            <h2 className='py-5'>In-growing toenails</h2>
+            <h2 className='py-3'>In-growing toenails</h2>
             <p>
               Persistent or severe in-growing toenails are often the cause of
               pain, irritation and infection of the toe.
@@ -23,8 +24,9 @@ function InGrowingToenails() {
             </p>
           </Col>
 
-          <Col xs={11} md={5} className=''>
-            <img
+          <Col xs={11} md={5} className='align-self-center'>
+            <LazyLoadImage
+              effect='blur'
               src={feet}
               className='rounded-sm'
               alt='A gloved podiatrists hand holding a patients foot, which is clean and healthy, against a white background'

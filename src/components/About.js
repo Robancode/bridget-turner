@@ -1,12 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import feet from "./../assets/feet1.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function About() {
   return (
     <>
       <div className='d-flex justify-content-center object-contain'>
-        <img
+        <LazyLoadImage
+          effect='blur'
           src={feet}
           alt='Some clean and healthy feet in a long line against a white background'
         />

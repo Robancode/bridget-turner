@@ -1,28 +1,49 @@
 import React from "react";
 import feet from "./../assets/feet1.jpg";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Home() {
   return (
     <>
       <div className='d-flex justify-content-center object-contain'>
-        <img
-          src={feet}
-          alt='Some clean and healthy feet in a long line against a white background'
-        />
+        {/* <Card className='text-dark'>
+          <Card.Img src={feet} alt='Card image' />
+          <Card.ImgOverlay
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+          >
+            <Card.Title>Bridget Turner</Card.Title>
+            <Card.Text>
+              <h4 className='text-center mw-75 text-dark'>
+                Specialist in Foot Health, BSc(Hons) in Podiatry, with over 20
+                years experience in Podiatry and Chiropody
+              </h4>
+            </Card.Text>
+          </Card.ImgOverlay>
+        </Card> */}
+        <div className='bg-white-50'>
+          <LazyLoadImage
+            effect='blur'
+            src={feet}
+            alt='Some clean and healthy feet in a long line against a white background'
+          />
+        </div>
       </div>
-      <Container className='py-3'>
-        <h1 className='pt-12 text-center'>Bridget Turner</h1>
+      <Container className='mt-4 mb-5'>
         <Row className='justify-content-center'>
           <Col md={6}>
-            <h4 className='text-center mw-75'>
-              Specialist in Foot Health, BSCHons in Podiatry, with over 20 years
-              experience in Podiatry and Chiropody
-            </h4>
+            <Card className='p-3 shadow border-0'>
+              <h1 className='text-center'>Bridget Turner</h1>
+              <h4 className='text-center mw-75'>
+                Private Specialist in Foot Health, BSc(Hons) in Podiatry
+                <br />
+                Over 20 years experience
+              </h4>
+            </Card>
           </Col>
         </Row>
       </Container>
-      <Container className='py-5'>
+      <Container className=''>
         <Row className='justify-content-center'>
           <Col xs={12} md={4}>
             <p>
@@ -44,33 +65,42 @@ function Home() {
       <Container fluid className='p-5 bg-lightcyan'>
         <Row className='justify-content-center'>
           <Col md={4}>
-            <p>
-              My services offer the highest standard of care and hygiene, and
-              encompass all aspects of foot health, whether they are routine or
-              special foot care needs, including:
-            </p>
-            <ul className='list-disc'>
-              <li> General foot care </li>
-              <li> Nail care </li>
-              <li> Corn and callus removal </li>
-              <li> Verrucae treatment</li>
-              <li> In-growing toenails</li>
-              <li> Prescription insoles </li>
-              <li> Fungal infections </li>
-              <li> Hammer toes</li>
-              <li>Foot care advice </li>
-            </ul>
+            <Card className='shadow border-0 m-2 p-3'>
+              <p>
+                My services offer the highest standard of care and hygiene, and
+                encompass all aspects of foot health, whether they are routine
+                or special foot care needs, including:
+              </p>
+              <div className='text-center' style={{ fontWeight: 500 }}>
+                General foot care <br />
+                Nail care <br />
+                Corn and callus removal <br />
+                Verrucae treatment
+                <br />
+                In-growing toenails
+                <br />
+                Prescription insoles <br />
+                Fungal infections <br />
+                Hammer toes
+                <br />
+                Foot care advice <br />
+              </div>
+            </Card>
           </Col>
           <Col md={4}>
-            <p>
-              I am also qualified to treat patients with special foot care
-              needs, such as:
-            </p>
-            <ul className='list-disc'>
-              <li> Rheumatoid arthritis</li>
-              <li> Diabetes </li>
-              <li> Circulatory disorders</li>
-            </ul>
+            <Card className='shadow border-0 m-2 p-3'>
+              <p>
+                I am also qualified to treat patients with special foot care
+                needs, such as but not limited to:
+              </p>
+              <div className='text-center' style={{ fontWeight: 500 }}>
+                Diabetes <br />
+                Rheumatoid arthritis
+                <br />
+                Circulatory disorders
+                <br />
+              </div>
+            </Card>
           </Col>
         </Row>
       </Container>
@@ -82,6 +112,7 @@ function Home() {
               services to those in your care, then please don’t hesitate to
               contact me.
             </p>
+            <p>Home visits are available for the frail or immobile.</p>
           </Col>
         </Row>
       </Container>
